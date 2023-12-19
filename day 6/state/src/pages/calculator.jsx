@@ -1,5 +1,5 @@
 /** @format */
-import { Flex, Input, Button, Heading, Center } from "@chakra-ui/react";
+import { Flex, Input, Button, Heading } from "@chakra-ui/react";
 import { useState } from "react";
 function CalculatorPage() {
   let numbers = {
