@@ -1,0 +1,11 @@
+/** @format */
+
+body {
+  background-color: black;
+  color: white;
+}
+
+input {
+  background-color: #e6e6e6;
+  color: black !important;
+}

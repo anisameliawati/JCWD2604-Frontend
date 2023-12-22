@@ -14,7 +14,7 @@ function ProductModalComponent({ isOpen, onClose, setProducts, product }) {
   const inputRef = useRef();
 
   const addNewProduct = () => {
-    if (!product.productName) setProducts((prev) => [...prev, data]);
+    if (!product?.productName) setProducts((prev) => [...prev, data]);
     else {
       //edit
       setProducts((prev) => {
@@ -23,7 +23,6 @@ function ProductModalComponent({ isOpen, onClose, setProducts, product }) {
           ({ productName }) => productName == product.productName
         );
         tmp[findIndex] = data;
-        console.log(tmp);
         return tmp;
       });
     }
