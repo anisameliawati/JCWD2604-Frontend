@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "email": "hello@mail.com",
+      "id": 2
+    },
+    {
+      "email": "udinudin@mail.com",
+      "password": "password",
+      "name": "ikmal",
+      "id": 3
+    },
+    {
+      "email": "new@mail.com",
+      "password": "123",
+      "name": "new",
+      "id": 4
+    },
+    {
+      "name": "udin udin",
+      "email": "udin@mail.com",
+      "password": "password",
+      "id": 5
+    },
+    {
+      "name": "udiiii",
+      "email": "udi@mail.com",
+      "password": "password",
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "productName": "sapu terbang"
+    }
+  ]
+}

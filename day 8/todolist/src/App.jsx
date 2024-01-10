@@ -11,11 +11,12 @@ export const ThemeContext = createContext(null);
 
 function App() {
   const [total, setTotal] = useState(10);
+
   const dispatch = useDispatch();
   const keepLogin = () => {
     const user = JSON.parse(localStorage.getItem("user"));
     console.log(user);
-    if (user.email)
+    if (user?.email)
       dispatch({
         type: "login",
         payload: user,

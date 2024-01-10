@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "udin@mail.com",
+      "password": "password"
+    },
+    {
+      "id": 2,
+      "email": "naruto@mail.com",
+      "password": "password"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "ayam goreng"
+    }
+  ]
+}
