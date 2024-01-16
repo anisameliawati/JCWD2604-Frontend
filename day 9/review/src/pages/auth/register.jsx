@@ -4,7 +4,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import YupPassword from "yup-password";
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { axiosInstance } from "../../api/axios";
 import { useNavigate } from "react-router-dom";
 function RegisterPage() {
@@ -35,6 +35,7 @@ function RegisterPage() {
       name: "",
       email: "",
       password: "",
+      role: "user",
     },
     validationSchema: Yup.object().shape({
       name: Yup.string().required(),

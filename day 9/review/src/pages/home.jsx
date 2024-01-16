@@ -1,19 +1,17 @@
 /** @format */
 import { Link } from "react-router-dom";
 import NavbarComponent from "../components/navbar";
+import SliderComponent from "../components/slider";
+import ProductListComponent from "../components/productList";
 
 function HomePage() {
   return (
     <>
       <NavbarComponent />
-      {/* <div>
-        <a href="/login" className=" bg-red-400 p-5">
-          login
-        </a>
-        <Link to="/login" className=" bg-blue-400 p-5">
-          login lewat link
-        </Link>
-      </div> */}
+      <div className="flex flex-col justify-center max-w-screen-2xl w-full items-center m-auto">
+        <SliderComponent />
+        <ProductListComponent />
+      </div>
     </>
   );
 }

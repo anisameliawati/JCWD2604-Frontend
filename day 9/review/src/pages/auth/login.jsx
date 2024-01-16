@@ -26,8 +26,6 @@ function LoginPage() {
           dispatch(functionLogin(...res.data));
 
           localStorage.setItem("user", res.data[0].id);
-
-          navigate("/");
         } else {
           alert("user not found");
         }

@@ -1,0 +1,113 @@
+{
+  "users": [
+    {
+      "email": "udinudin@mail.com",
+      "password": "password",
+      "name": "ikmal",
+      "id": 3,
+      "role": "user"
+    },
+    {
+      "email": "admin@mail.com",
+      "password": "password",
+      "name": "admin",
+      "id": 4,
+      "role": "admin"
+    }
+  ],
+  "products": [
+    {
+      "img": "https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzI2MjYzL2E4NGFlOGFiNTcwYzZlODRjZWEzMDI1OGY2ZTAwMTI5LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NDAwfSwid2VicCI6eyJxdWFsaXR5Ijo1MH19fQ==",
+      "productName": "Nike Dunk Low Grey Fo",
+      "price": 1570000,
+      "id": 1,
+      "productDescription": "pandas"
+    },
+    {
+      "img": "https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzQyMTgzLzQ5NDRkZGZhOTdmODQxNTg1NjU5ODhiNGNiOWMzNzRmLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMH0sIndlYnAiOnsicXVhbGl0eSI6NTB9fX0=",
+      "productName": "Nike Air Force 1 '07 Low White Swoosh Panda",
+      "price": 1550000,
+      "id": 2,
+      "productDescription": "nike nike"
+    },
+    {
+      "productName": "Nike Dunk Low Polar Blue",
+      "price": 1450000,
+      "productDescription": "We thoroughly check every purchase you make and applies our company's guarantee to the product's legitimacy. The guarantee is valid for 2 days after receiving the product from the delivery service. Should you have any concern about the product you purchase, kindly reach out to our Customer Service and Specialist on Monday - Saturday 10.00 - 21.00 (GMT+7 / WIB).",
+      "img": "https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzcyMDE2LzRkYjAxNmRhNTdlZTRlZGEwOTJhZjk0ZWQ4YjAzNzkxLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTQwMH19fQ==",
+      "id": 6
+    },
+    {
+      "productName": "Nike P-6000 Light Iron Ore",
+      "price": 2050000,
+      "productDescription": "We thoroughly check every purchase you make and applies our company's guarantee to the product's legitimacy. The guarantee is valid for 2 days after receiving the product from the delivery service. Should you have any concern about the product you purchase, kindly reach out to our Customer Service and Specialist on Monday - Saturday 10.00 - 21.00 (GMT+7 / WIB).",
+      "img": "https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzcyODg5LzQ1ZDZjM2RjOTEzNTY3NjEyYjcwZjNlZGJiMzk1YzAwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTQwMH19fQ==",
+      "id": 7
+    },
+    {
+      "productName": "Nike SB Dunk Low The Powerpuff Girls Bubbles",
+      "price": 4950000,
+      "productDescription": "We thoroughly check every purchase you make and applies our company's guarantee to the product's legitimacy. The guarantee is valid for 2 days after receiving the product from the delivery service. Should you have any concern about the product you purchase, kindly reach out to our Customer Service and Specialist on Monday - Saturday 10.00 - 21.00 (GMT+7 / WIB).\n",
+      "img": "https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzc3MjE3LzMzZjBkYmNlNGQ3YTc4OTQyMzllOTU1ZTgzOWE0OGNkLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTQwMH19fQ==",
+      "id": 8
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "productId": 1,
+      "userId": 3,
+      "qty": 2,
+      "totalPrice": 3000000,
+      "orderDate": "2024-01-15"
+    },
+    {
+      "productId": 1,
+      "userId": 3,
+      "qty": "20",
+      "orderDate": "2024-01-15T05:53:19.116Z",
+      "totalPrice": 31200000,
+      "id": 2
+    },
+    {
+      "productId": 6,
+      "userId": 4,
+      "qty": "2",
+      "orderDate": "2024-01-15T06:23:38.496Z",
+      "totalPrice": 2900000,
+      "id": 3
+    },
+    {
+      "productId": 2,
+      "userId": 3,
+      "qty": "2",
+      "orderDate": "2024-01-15T06:42:04.245Z",
+      "totalPrice": 3000000,
+      "id": 4
+    },
+    {
+      "productId": 2,
+      "userId": 3,
+      "qty": "5",
+      "orderDate": "2024-01-15T06:44:08.624Z",
+      "totalPrice": 7500000,
+      "id": 5
+    },
+    {
+      "productId": 2,
+      "userId": 3,
+      "qty": "5",
+      "orderDate": "2024-01-15T06:46:14.785Z",
+      "totalPrice": 7500000,
+      "id": 6
+    },
+    {
+      "productId": 6,
+      "userId": 3,
+      "qty": "5",
+      "orderDate": "2024-01-15T07:11:49.687Z",
+      "totalPrice": 7250000,
+      "id": 7
+    }
+  ]
+}
