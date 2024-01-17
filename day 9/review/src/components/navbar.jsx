@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { functionLogout } from "../redux/slices/userSlice";
 import UserIcon from "../assets/user.svg";
+import cart from "../assets/cart.png";
+
 function NavbarComponent() {
   const userSelector = useSelector((state) => state.auth);
   const dispatch = useDispatch();
@@ -31,6 +33,9 @@ function NavbarComponent() {
       {userSelector?.id ? (
         <div className="flex gap-3">
           <div>Welcome, {userSelector?.name}</div>
+          <Link to="/cart" className="rounded-md border-gray-500 border  px-2">
+            Cart
+          </Link>
           <button
             className="rounded-md border-gray-500 border  px-2"
             onClick={logout}

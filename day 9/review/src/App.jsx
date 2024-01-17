@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { functionLogin } from "./redux/slices/userSlice";
 import { axiosInstance } from "./api/axios";
 import { routes } from "./routes/protectedPage";
+import { CartProvider } from "react-use-cart";
 function App() {
   const [isLoading, setIsLoading] = useState(true); // ini
   const dispatch = useDispatch();

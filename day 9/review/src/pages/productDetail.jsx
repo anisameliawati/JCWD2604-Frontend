@@ -5,7 +5,6 @@ import NavbarComponent from "../components/navbar";
 import { axiosInstance } from "../api/axios";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import axios from "axios";
 
 function ProductDetail() {
   const { productId } = useParams();
@@ -18,6 +17,7 @@ function ProductDetail() {
   };
   const [product, setProduct] = useState({ ...initalProduct });
   const userSelector = useSelector((state) => state.auth);
+
   const buy = (e) => {
     if (
       window.confirm(
@@ -35,19 +35,47 @@ function ProductDetail() {
         totalPrice: qty * product.price,
       };
       axiosInstance()
-        .post("/orders", newOrder)
+        .post("/transaksi", newOrder)
         .then(() => {
           alert("order berhasil dibuat");
           document.getElementById("form").reset();
         })
         .catch((err) => console.log(err));
+    }
+  };
 
-      axiosInstance().get("/products", {
-        params: {
-          productName: product.productName,
-          price: product.price,
-        },
-      });
+  const cart = (e) => {
+    // e.preventDefault();
+    console.log("check");
+    if (
+      window.confirm(
+        "apakah Anda yakin menambah produk " +
+          product.productName +
+          " kedalam cart?"
+      )
+    ) {
+      // e.preventDefault();
+
+      console.log(true);
+      const qty = document.getElementById("qty").value;
+      const newCart = {
+        productId: product.id,
+        userId: userSelector.id,
+        productName: product.productName,
+        productPrice: product.price,
+        productImg: product.img,
+        qty,
+        orderDate: new Date(),
+        totalPrice: qty * product.price,
+      };
+      axiosInstance()
+        .post("/orders", newCart)
+        .then(() => {
+          console.log("test");
+          alert("pesanan ditambahkan");
+          document.getElementById("form").reset();
+        })
+        .catch((err) => console.log(err));
     }
   };
 
@@ -64,6 +92,11 @@ function ProductDetail() {
     fetchProduct();
   }, []);
 
+  const input = () => {
+    const a = document.getElementById("qty").value;
+    if (a > 0) cart(); // ga nge post jadinya ga update di cart page
+    else if (a > 0) buy(); // kenapa masih mereturn si cart?
+  };
   return (
     <>
       <NavbarComponent />
@@ -81,7 +114,7 @@ function ProductDetail() {
               </div>
             </div>
 
-            <form action="" onSubmit={buy} className="flex gap-3" id="form">
+            <form action="" className="flex gap-3" id="form">
               <input
                 className="h-[49px] border max-w-32 p-5 rounded-lg text-center"
                 type="number"
@@ -91,10 +124,17 @@ function ProductDetail() {
                 id="qty"
               ></input>
               <button
-                type="submit"
+                onClick={input}
                 className="h-[49px] border w-[168px] rounded-lg text-white bg-black hover:bg-white border-black hover:text-black"
               >
                 Buy
+              </button>
+              <button
+                onClick={input}
+                type="button"
+                className="h-[49px] border w-[168px] rounded-lg text-white bg-black hover:bg-white border-black hover:text-black"
+              >
+                Add To Cart
               </button>
             </form>
             <div className="font-semibold">

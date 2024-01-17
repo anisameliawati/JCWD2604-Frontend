@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import LoadingPage from "../pages/loading";
 import ProductDetail from "../pages/productDetail";
 import AdminDashBoard from "../pages/admin/dashboard";
+import Cart from "../pages/cart";
 
 function ProtectedPage({ children, userOnly, guestOnly, adminOnly }) {
   const userSelector = useSelector((state) => state.auth);
@@ -51,9 +52,10 @@ class RouteClass {
 
 export const routes = [
   new RouteClass("/", <HomePage />),
+  new RouteClass("/cart", <Cart />, true, false),
   new RouteClass("/login", <LoginPage />, false, true),
   new RouteClass("/register", <RegisterPage />, false, true),
-  new RouteClass("/products/:productId", <ProductDetail />),
+  new RouteClass("/products/:productId", <ProductDetail />, true, false),
   new RouteClass("/admin/", <AdminDashBoard />, true, false, true),
   // new RouteClass("/admin/:id/addresses/:addressId", <AdminDashBoard />, true, false, true),
 ];

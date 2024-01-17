@@ -1,8 +1,9 @@
 /** @format */
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import NavbarComponent from "../components/navbar";
 import SliderComponent from "../components/slider";
 import ProductListComponent from "../components/productList";
+// import { CartProvider } from "react-use-cart";
 
 function HomePage() {
   return (
