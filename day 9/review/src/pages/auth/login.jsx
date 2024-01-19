@@ -28,6 +28,7 @@ function LoginPage() {
           localStorage.setItem("user", res.data[0].id);
         } else {
           alert("user not found");
+          navigate("/register");
         }
 
         console.log(res.data);

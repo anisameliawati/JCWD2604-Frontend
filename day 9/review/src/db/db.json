@@ -72,28 +72,6 @@
       "productImg": "https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzI2MjYzL2E4NGFlOGFiNTcwYzZlODRjZWEzMDI1OGY2ZTAwMTI5LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NDAwfSwid2VicCI6eyJxdWFsaXR5Ijo1MH19fQ=="
     },
     {
-      "productId": 2,
-      "userId": 5,
-      "productName": "Nike Air Force 1 '07 Low White Swoosh Panda",
-      "productPrice": 1550000,
-      "productImg": "https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzQyMTgzLzQ5NDRkZGZhOTdmODQxNTg1NjU5ODhiNGNiOWMzNzRmLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMH0sIndlYnAiOnsicXVhbGl0eSI6NTB9fX0=",
-      "qty": "",
-      "orderDate": "2024-01-17T08:04:03.265Z",
-      "totalPrice": 0,
-      "id": 2
-    },
-    {
-      "productId": 2,
-      "userId": 5,
-      "productName": "Nike Air Force 1 '07 Low White Swoosh Panda",
-      "productPrice": 1550000,
-      "productImg": "https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzQyMTgzLzQ5NDRkZGZhOTdmODQxNTg1NjU5ODhiNGNiOWMzNzRmLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjQwMH0sIndlYnAiOnsicXVhbGl0eSI6NTB9fX0=",
-      "qty": "",
-      "orderDate": "2024-01-17T08:13:07.318Z",
-      "totalPrice": 0,
-      "id": 3
-    },
-    {
       "productId": 6,
       "userId": 5,
       "productName": "Nike Dunk Low Polar Blue",
@@ -114,17 +92,6 @@
       "orderDate": "2024-01-17T09:07:00.554Z",
       "totalPrice": 1550000,
       "id": 5
-    },
-    {
-      "productId": 6,
-      "userId": 5,
-      "productName": "Nike Dunk Low Polar Blue",
-      "productPrice": 1450000,
-      "productImg": "https://d5ibtax54de3q.cloudfront.net/eyJidWNrZXQiOiJraWNrYXZlbnVlLWFzc2V0cyIsImtleSI6InByb2R1Y3RzLzcyMDE2LzRkYjAxNmRhNTdlZTRlZGEwOTJhZjk0ZWQ4YjAzNzkxLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTQwMH19fQ==",
-      "qty": "1",
-      "orderDate": "2024-01-17T09:38:01.422Z",
-      "totalPrice": 1450000,
-      "id": 6
     }
   ],
   "transaksi": [

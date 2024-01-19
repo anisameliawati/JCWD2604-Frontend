@@ -33,14 +33,13 @@ function NavbarComponent() {
             <div className="flex gap-2">
               <div> {userSelector.email}</div>
               <button className="bg-red-500 p-3" onClick={logout}>
-                {" "}
                 logout
               </button>
             </div>
           </>
         ) : (
           <Link to={"/login"}> Login </Link>
-        )}{" "}
+        )}
       </b>
     </div>
   );
